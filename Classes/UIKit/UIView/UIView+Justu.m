@@ -12,11 +12,6 @@
 
 @implementation UIView (Justu)
 
-static char kWhenTappedBlockKey;
-static char kWhenDoubleTappedBlockKey;
-static char kWhenTwoFingerTappedBlockKey;
-static char kWhenTouchedDownBlockKey;
-static char kWhenTouchedUpBlockKey;
 
 #pragma mark - 移除所有子视图
 

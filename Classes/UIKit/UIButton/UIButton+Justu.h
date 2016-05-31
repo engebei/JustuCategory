@@ -8,9 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-typedef void (^TouchedBlock)(NSInteger tag);
-
-
 @interface UIButton (Justu)
 
 #pragma mark - 设置按钮额外热区
@@ -30,15 +27,6 @@ typedef void (^TouchedBlock)(NSInteger tag);
  *  @param waitTittle 等待中标题
  */
 -(void)startTime:(NSInteger )timeout title:(NSString *)tittle waitTittle:(NSString *)waitTittle;
-
-#pragma mark - 添加Block支持
-
-/**
- *  block
- *
- *  @param touchHandler
- */
--(void)addActionHandler:(TouchedBlock)touchHandler;
 
 #pragma mark - 背景颜色添加点击状态
 /**

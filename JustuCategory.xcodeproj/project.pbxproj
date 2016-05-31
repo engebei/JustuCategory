@@ -223,7 +223,6 @@
 				C90A7BFB1CFD342900DDC5EF /* UIImageView */,
 				C90A7BFF1CFD342900DDC5EF /* UILabel */,
 				C90A7C021CFD342900DDC5EF /* UINavigationBar */,
-				C90A7C051CFD342900DDC5EF /* UINavigationController */,
 				C90A7C061CFD342900DDC5EF /* UITableView */,
 				C90A7C091CFD342900DDC5EF /* UITextField */,
 				C90A7C0C1CFD342900DDC5EF /* UITextView */,
@@ -302,13 +301,6 @@
 				C90A7C041CFD342900DDC5EF /* UINavigationBar+Justu.m */,
 			);
 			path = UINavigationBar;
-			sourceTree = "<group>";
-		};
-		C90A7C051CFD342900DDC5EF /* UINavigationController */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = UINavigationController;
 			sourceTree = "<group>";
 		};
 		C90A7C061CFD342900DDC5EF /* UITableView */ = {

@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-typedef void (^JMWhenTappedBlock)();
-
 @interface UIView (Justu)
 
 

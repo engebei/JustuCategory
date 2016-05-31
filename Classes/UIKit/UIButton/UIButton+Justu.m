@@ -9,8 +9,6 @@
 #import "UIButton+Justu.h"
 #import <objc/runtime.h>
 
-static const void *UIButtonBlockKey = &UIButtonBlockKey;
-
 @implementation UIButton (Justu)
 
 #pragma mark - 设置按钮额外热区
@@ -68,20 +66,6 @@ static const void *UIButtonBlockKey = &UIButtonBlockKey;
     });
     dispatch_resume(_timer);
     
-}
-
-
-#pragma mark - 添加Block支持
-
--(void)addActionHandler:(TouchedBlock)touchHandler{
-    objc_setAssociatedObject(self, UIButtonBlockKey, touchHandler, OBJC_ASSOCIATION_COPY_NONATOMIC);
-    [self addTarget:self action:@selector(actionTouched:) forControlEvents:UIControlEventTouchUpInside];
-}
--(void)actionTouched:(UIButton *)btn{
-    TouchedBlock block = objc_getAssociatedObject(self, UIButtonBlockKey);
-    if (block) {
-        block(btn.tag);
-    }
 }
 
 #pragma mark - 背景颜色添加点击状态

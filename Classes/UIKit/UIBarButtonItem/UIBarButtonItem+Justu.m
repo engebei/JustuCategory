@@ -11,48 +11,6 @@
 
 
 
-@implementation UIBarButtonItem (Justu)
-
-#pragma mark - 添加Block支持
-- (id)initWithImage:(UIImage *)image style:(UIBarButtonItemStyle)style actionHandler:(UIBarButtonItemActionHandler)actionHandler {
-    if (self = [self initWithImage:image style:style target:self action:@selector(performActionHandler)]) {
-        [self setActionHandler:actionHandler];
-    }
-    return self;
-}
-
-- (id)initWithImage:(UIImage *)image landscapeImagePhone:(UIImage *)landscapeImagePhone style:(UIBarButtonItemStyle)style actionHandler:(UIBarButtonItemActionHandler)actionHandler {
-    if (self = [self initWithImage:image landscapeImagePhone:landscapeImagePhone style:style target:self action:@selector(performActionHandler)]) {
-        [self setActionHandler:actionHandler];
-    }
-    return self;
-}
-
-- (id)initWithTitle:(NSString *)title style:(UIBarButtonItemStyle)style actionHandler:(UIBarButtonItemActionHandler)actionHandler {
-    if (self = [self initWithTitle:title style:style target:self action:@selector(performActionHandler)]) {
-        [self setActionHandler:actionHandler];
-    }
-    return self;
-}
-
-- (id)initWithBarButtonSystemItem:(UIBarButtonSystemItem)systemItem actionHandler:(UIBarButtonItemActionHandler)actionHandler {
-    if (self = [self initWithBarButtonSystemItem:systemItem target:self action:@selector(performActionHandler)]) {
-        [self setActionHandler:actionHandler];
-    }
-    return self;
-}
-
-- (void)setActionHandler:(UIBarButtonItemActionHandler)actionHandler {
-    objc_setAssociatedObject(self, "actionHandler", actionHandler, OBJC_ASSOCIATION_COPY_NONATOMIC);
-}
-
-- (void)performActionHandler {
-    UIBarButtonItemActionHandler actionHandler = objc_getAssociatedObject(self, "actionHandler");
-    actionHandler();
-}
-
-@end
-
 
 NSString const *UIBarButtonItem_badgeKey = @"UIBarButtonItem_badgeKey";
 

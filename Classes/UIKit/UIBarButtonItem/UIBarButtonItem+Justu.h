@@ -8,21 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-
-typedef void (^UIBarButtonItemActionHandler)();
-@interface UIBarButtonItem (Justu)
-
-#pragma mark - 添加Block支持
-- (id)initWithImage:(UIImage *)image style:(UIBarButtonItemStyle)style actionHandler:(UIBarButtonItemActionHandler)actionHandler;
-- (id)initWithImage:(UIImage *)image landscapeImagePhone:(UIImage *)landscapeImagePhone style:(UIBarButtonItemStyle)style actionHandler:(UIBarButtonItemActionHandler)actionHandler NS_AVAILABLE_IOS(5_0);
-- (id)initWithTitle:(NSString *)title style:(UIBarButtonItemStyle)style actionHandler:(UIBarButtonItemActionHandler)actionHandler;
-- (id)initWithBarButtonSystemItem:(UIBarButtonSystemItem)systemItem actionHandler:(UIBarButtonItemActionHandler)actionHandler;
-
-- (void)setActionHandler:(UIBarButtonItemActionHandler)actionHandler;
-
-@end
-
-
 #pragma mark - Badge
 @interface UIBarButtonItem (Badge)
 
