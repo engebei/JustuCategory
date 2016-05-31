@@ -44,7 +44,6 @@
 		C90A7BCB1CFD332A00DDC5EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C90A7BCE1CFD332A00DDC5EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C90A7BD01CFD332A00DDC5EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C90A7BD81CFD342900DDC5EF /* FoundationHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoundationHeader.h; sourceTree = "<group>"; };
 		C90A7BDA1CFD342900DDC5EF /* NSArray+Justu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Justu.h"; sourceTree = "<group>"; };
 		C90A7BDB1CFD342900DDC5EF /* NSArray+Justu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Justu.m"; sourceTree = "<group>"; };
 		C90A7BDD1CFD342900DDC5EF /* NSDate+Justu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Justu.h"; sourceTree = "<group>"; };
@@ -148,7 +147,6 @@
 		C90A7BD71CFD342900DDC5EF /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
-				C90A7BD81CFD342900DDC5EF /* FoundationHeader.h */,
 				C90A7BD91CFD342900DDC5EF /* NSArray */,
 				C90A7BDC1CFD342900DDC5EF /* NSDate */,
 				C90A7BDF1CFD342900DDC5EF /* NSDictionary */,
@@ -216,13 +214,13 @@
 		C90A7BEB1CFD342900DDC5EF /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				C90A7BFE1CFD342900DDC5EF /* UIKitHeader.h */,
 				C90A7BEC1CFD342900DDC5EF /* UIApplication */,
 				C90A7BEF1CFD342900DDC5EF /* UIBarButtonItem */,
 				C90A7BF21CFD342900DDC5EF /* UIButton */,
 				C90A7BF51CFD342900DDC5EF /* UIColor */,
 				C90A7BF81CFD342900DDC5EF /* UIImage */,
 				C90A7BFB1CFD342900DDC5EF /* UIImageView */,
-				C90A7BFE1CFD342900DDC5EF /* UIKitHeader.h */,
 				C90A7BFF1CFD342900DDC5EF /* UILabel */,
 				C90A7C021CFD342900DDC5EF /* UINavigationBar */,
 				C90A7C051CFD342900DDC5EF /* UINavigationController */,
@@ -592,6 +590,7 @@
 				C90A7BD51CFD332A00DDC5EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
