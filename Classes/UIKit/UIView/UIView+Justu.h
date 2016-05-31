@@ -45,12 +45,6 @@ typedef void (^JMWhenTappedBlock)();
  */
 - (void)setRoundedCorners:(UIRectCorner)corners radius:(CGFloat)radius;
 
-#pragma mark - 添加手势
-- (void)whenTapped:(JMWhenTappedBlock)block;
-- (void)whenDoubleTapped:(JMWhenTappedBlock)block;
-- (void)whenTwoFingerTapped:(JMWhenTappedBlock)block;
-- (void)whenTouchedDown:(JMWhenTappedBlock)block;
-- (void)whenTouchedUp:(JMWhenTappedBlock)block;
 
 
 #pragma mark - 常用属性
