@@ -34,7 +34,7 @@
  */
 - (NSDictionary *)dictionaryValue;
 /**
- *  把字典或数组转成JSON
+ *  把字典或数组转成JSON字符串
  *
  *  @param object 字典或数组
  *

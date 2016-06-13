@@ -26,7 +26,7 @@
  *  @param tittle     标题
  *  @param waitTittle 等待中标题
  */
--(void)startTime:(NSInteger )timeout title:(NSString *)tittle waitTittle:(NSString *)waitTittle;
+- (void)startTime:(NSInteger)timeout title:(NSString *)tittle waitTittle:(NSString *)waitTittle;
 
 #pragma mark - 背景颜色添加点击状态
 /**
