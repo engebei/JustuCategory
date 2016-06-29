@@ -116,6 +116,29 @@
     [self verticalCenterImageAndTitle:DEFAULT_SPACING];
 }
 
+- (void)verticalCenterTitleAndImage:(CGFloat)spacing
+{
+    // get the size of the elements here for readability
+    CGSize imageSize = self.imageView.frame.size;
+    CGSize titleSize = self.titleLabel.frame.size;
+    
+    // lower the text and push it left to center it
+    self.titleEdgeInsets = UIEdgeInsetsMake(- (imageSize.height + spacing/2), - imageSize.width,0.0, 0.0);
+    
+    // the text width might have changed (in case it was shortened before due to
+    // lack of space and isn't anymore now), so we get the frame size again
+    titleSize = self.titleLabel.frame.size;
+    
+    // raise the image and push it right to center it
+    self.imageEdgeInsets = UIEdgeInsetsMake( 0.0, 0.0, - (titleSize.height + spacing/2), - titleSize.width);
+    
+}
+- (void)verticalCenterTitleAndImage
+{
+    const int DEFAULT_SPACING = 6.0f;
+    [self verticalCenterTitleAndImage:DEFAULT_SPACING];
+}
+
 
 - (void)horizontalCenterTitleAndImage:(CGFloat)spacing
 {

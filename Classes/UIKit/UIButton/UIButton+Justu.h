@@ -47,6 +47,15 @@
 - (void)verticalCenterImageAndTitle:(CGFloat)spacing;
 - (void)verticalCenterImageAndTitle; //默认6.0
 
+
+/**
+ *  上下居中，文字在上，图片在下
+ *
+ *  @param spacing 间距
+ */
+- (void)verticalCenterTitleAndImage:(CGFloat)spacing;
+- (void)verticalCenterTitleAndImage;
+
 /**
  *  左右居中，文字在左，图片在右
  *
