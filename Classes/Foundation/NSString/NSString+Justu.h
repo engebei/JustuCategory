@@ -12,11 +12,39 @@
 @interface NSString (Justu)
 
 #pragma mark - 设备信息
+///**
+// 返回一个新的 UUID 字符串
+// e.g. "D1178E50-2A4D-4F1F-9BD3-F6AAB00E06B1"
+// */
+//+ (NSString *)stringWithUUID;
+
 /**
- 返回一个新的 UUID 字符串
- e.g. "D1178E50-2A4D-4F1F-9BD3-F6AAB00E06B1"
+ *  返回一个新的 UUID 字符串
+ *
+ *  @return UUID
  */
 + (NSString *)stringWithUUID;
+
+/**
+ *  app版本号
+ *
+ *  @return
+ */
++ (NSString *)stringWithAppVersion;
+
+/**
+ *  获取手机系统版本号
+ *
+ *  @return 系统版本号
+ */
++ (CGFloat)stringWithIOSVersion;
+
+/**
+ *  获得设备型号
+ *
+ *  @return
+ */
++ (NSString *)stringWithDeviceModel;
 
 #pragma mark - md5加密
 /**
