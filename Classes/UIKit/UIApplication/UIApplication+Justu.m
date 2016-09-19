@@ -145,6 +145,21 @@ static volatile int32_t numberOfActiveNetworkConnections;
     return tot_cpu;
 }
 
++ (float)distFreeSize
+{
+    float totalFreeSpace;
+    NSError *error = nil;
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSDictionary *dictionary = [[NSFileManager defaultManager] attributesOfFileSystemForPath:[paths lastObject] error: &error];
+    
+    if (dictionary) {
+        NSNumber *freeFileSystemSizeInBytes = [dictionary objectForKey:NSFileSystemFreeSize];
+        totalFreeSpace = [freeFileSystemSizeInBytes floatValue]/1024.0f/1024.0f/1024.0f;
+    }
+    
+    return  totalFreeSpace;
+}
+
 #pragma mark -  状态栏HUD
 - (void)beganNetworkActivity
 {

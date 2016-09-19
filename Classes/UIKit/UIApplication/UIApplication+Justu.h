@@ -45,6 +45,11 @@
 
 //以上来自YYCategories  https://github.com/ibireme/YYCategories
 
+/**
+ *  磁盘剩余可用空间
+ */
++ (float)distFreeSize;
+
 #pragma mark - 状态栏HUD
 
 /**

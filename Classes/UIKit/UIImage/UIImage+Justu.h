@@ -69,6 +69,15 @@
 + (UIImage *)imageWithColor:(UIColor *)color size:(CGSize)size;
 
 /**
+ *  根据颜色渲染图片颜色
+ *
+ *  @param image 原图片
+ *
+ *  @return 新颜色图片
+ */
++ (UIImage*)image:(UIImage*)image withTintColor:(UIColor*)color;
+
+/**
  *  获取灰度图
  *
  *  @param image 原图片
